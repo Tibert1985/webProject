@@ -1,6 +1,9 @@
 body {
     background-image: none;
     font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0%;
+    width: 90%;
 }
 
 /*flexbox navbar at top*/
@@ -8,11 +11,10 @@ body {
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: flex-end;
-    align-items: center;
     padding: 2rem;
     margin: 0;
     font-size: 2.5rem;
-    border: 1px black;
+    width: 90%;
 }
 
 .nav-item {
@@ -25,9 +27,32 @@ body {
     color: rgb(0, 0, 0);
 }
 
+.nav-item a:hover {
+    color: rgb(169, 169, 169);
+}
+
 .nav-item:first-child {
     margin-right: auto;
     margin-left: 2rem;
 }
 
-/*about*/
+/*wrapper img?*/
+
+.flex-container {
+    padding: 0;
+    margin: 0;
+    background-image: url(../webProject/images/bg.jpg);
+    background-repeat: no-repeat;
+    width: 90%;
+    background-size: cover;
+}
+
+.flex-item {
+    list-style: none;
+    margin-right: 2rem;
+    color: rgb(255, 255, 255);
+    padding: 5rem;
+    font-size: 1.5rem;
+}
+
+
