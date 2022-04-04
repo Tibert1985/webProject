@@ -1,9 +1,13 @@
+* {
+    padding: 0%;
+    width: 90%;
+}
+
 body {
     background-image: none;
     font-family: 'Lora', serif;
-    margin: 0;
-    padding: 0%;
-    width: 90%;
+    justify-content: center;
+    background-color: brown;
 }
 
 /*flexbox navbar at top*/
@@ -11,9 +15,9 @@ body {
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: flex-end;
-    padding: 2rem;
+    padding: 1rem;
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 1rem;
     width: 90%;
 }
 
@@ -56,53 +60,57 @@ body {
 }
 
 /*developer section*/
+.dev-section {
+    background-color: rgb(255, 255, 255);
+    padding: 2em;
+}     
 
-.container {
+.dev-container {
     display: flex;
-    justify-content: center;
+    position: relative;
+    width: 50%;
 }
 
-.dev-img {
-  opacity: 1;
-  display: block;
-  width: 400px;
-  height: 400px;
-  transition: .5s ease;
-  backface-visibility: hidden;
+.dev-img-1 {
+    display: block;
+    width: 300px;
+    height: 300px;
 }
 
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: static;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%)
+.dev-middle {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #feffff;
+    opacity: 80%;
+    overflow: hidden;
+    width: 300px;
+    height: 0;
+    transition: .5s ease;
 }
 
-.container:hover .image {
-    opacity: 0.3;
-  }
-  
-.container:hover .middle {
-    opacity: 1;
-  }
-
-.text {
-  background-color: #000000;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
+.dev-container:hover .dev-middle {
+    bottom: 0;
+    height: 100%;
 }
 
-.text-list {
-    background-color: #000000;
-    color: white;
-    font-size: 16px;
-    padding: 16px 32px;
+.dev-text {
+    white-space: nowrap; 
+    color: rgb(19, 18, 18);
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 
-.text-list > li {
-    text-decoration: none;
+.dev-ul-1 {
+    list-style: none;
+}
+
+.dev-name-1 .dev-ul-1 .dev-li-1 {
+    color: rgb(0, 0, 0);
 }
