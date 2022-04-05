@@ -1,6 +1,8 @@
 * {
-    padding: 0%;
-    width: 90%;
+  
+  padding: 0;
+  margin: 0;  
+
 }
 
 body {
@@ -8,6 +10,7 @@ body {
     font-family: 'Lora', serif;
     justify-content: center;
     background-color: brown;
+    width: 90%;
 }
 
 /*flexbox navbar at top*/
@@ -18,7 +21,7 @@ body {
     padding: 1rem;
     margin: 0;
     font-size: 1rem;
-    width: 90%;
+   
 }
 
 .nav-item {
@@ -45,10 +48,7 @@ body {
 .flex-container {
     padding: 0;
     margin: 0;
-    background-image: url(../webProject/images/bg.jpg);
-    background-repeat: no-repeat;
-    width: 90%;
-    background-size: cover;
+    background-image: url(../webProject/images/wrapper1.jpg);
 }
 
 .flex-item {
@@ -59,58 +59,51 @@ body {
     font-size: 1.5rem;
 }
 
-/*developer section*/
-.dev-section {
+/*about section*/
+
+.about-container {
+   
+    padding: 20px;
     background-color: rgb(255, 255, 255);
-    padding: 2em;
-}     
+}
+
+.about-text {
+
+}
+
+/*developer section*/
 
 .dev-container {
     display: flex;
-    position: relative;
-    width: 50%;
+    padding: 20px;
+    background-image: url(../webProject/images/bg.jpg);
 }
 
-.dev-img-1 {
-    display: block;
+.gawie {
+
+}
+
+.tibert {
+
+}
+
+.dev-img {
     width: 300px;
     height: 300px;
 }
 
-.dev-middle {
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-    right: 0;
-    background-color: #feffff;
-    opacity: 80%;
-    overflow: hidden;
-    width: 300px;
-    height: 0;
-    transition: .5s ease;
+.overlay-text {
+
 }
 
-.dev-container:hover .dev-middle {
-    bottom: 0;
-    height: 100%;
+.dev-name {
+    font-size: 2em;
 }
 
-.dev-text {
-    white-space: nowrap; 
-    color: rgb(19, 18, 18);
-    font-size: 20px;
-    position: absolute;
-    overflow: hidden;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-
-.dev-ul-1 {
+.dev-ul {
     list-style: none;
 }
 
-.dev-name-1 .dev-ul-1 .dev-li-1 {
-    color: rgb(0, 0, 0);
+.dev-li {
+
 }
