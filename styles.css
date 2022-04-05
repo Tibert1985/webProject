@@ -1,8 +1,7 @@
 * {
-  
   padding: 0;
-  margin: 0;  
-
+  margin-left: auto;
+  margin-right: auto;  
 }
 
 body {
@@ -48,7 +47,11 @@ body {
 .flex-container {
     padding: 0;
     margin: 0;
-    background-image: url(../webProject/images/wrapper1.jpg);
+    background-image: url(../webProject/images/wrapper3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
 }
 
 .flex-item {
