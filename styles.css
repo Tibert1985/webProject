@@ -8,18 +8,18 @@ body {
     background-image: none;
     font-family: 'Lora', serif;
     justify-content: center;
-    background-color: brown;
     width: 90%;
 }
 
 /*flexbox navbar at top*/
+
 .nav-list {
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: flex-end;
     padding: 1rem;
     margin: 0;
-    font-size: 1rem;
+    font-size: 1.5rem;
    
 }
 
@@ -51,7 +51,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 400px;
+    height: 600px;
 }
 
 .flex-item {
@@ -59,7 +59,18 @@ body {
     margin-right: 2rem;
     color: rgb(255, 255, 255);
     padding: 5rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
+}
+
+.gt-wrapper {
+    display: flex;
+    justify-content: center center;
+}
+
+.wrapper-h1 {
+    font-size: 4em;
+    color: rgb(255, 255, 255);
+    
 }
 
 /*about section*/
