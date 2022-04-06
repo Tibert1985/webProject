@@ -47,7 +47,7 @@ body {
 .flex-container {
     padding: 0;
     margin: 0;
-    background-image: url(../webProject/images/wrapper3.jpg);
+    background-image: url(./images/wrapper3.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -90,7 +90,7 @@ body {
 .dev-container {
     display: flex;
     padding: 20px;
-    background-image: url(../webProject/images/bg.jpg);
+    background-image: url(./images/bg.jpg);
 }
 
 .dev-container:hover .overlay-text {
