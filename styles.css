@@ -73,6 +73,12 @@ body {
     justify-content: center;
 }
 
+h1 {
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-size: 4em
+}
+
 /*about section*/
 
 .about-container {
@@ -81,41 +87,59 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
-.about-text {
 
-}
 
 /*developer section*/
 
 .dev-container {
-    display: flex;
     position: relative;
-    background-image: url(../webProject/images/wrapper2.jpg);
-    background-position: top;
-    width: 100%;
+    background-image: url(../webProject/images/wrapper3.jpg);
     padding: 2em;
-}
-
-.dev-img:hover .text {
-    width: 100%;
-    left: 0;
+    display: flex;
 }
 
 .dev-img {
+    display: block;
     width: 300px;
     height: 300px;
-    display: block;
-    justify-content: center;
+    
+}
+
+.overlay {
+    
+    position: absolute;
+    bottom: 2em;
+    left: 0;
+    right: 0;
+    background-color: #87898a;
+    overflow: hidden;
+    width: 0;
+    height: 300px;
+    transition: .5s ease;
+    opacity: 80%;
+  
+}
+
+.dev-container:hover .overlay {
+    width: 300px;
+    left: 0;
+    position: absolute;
 }
 
 .text {
-    position: absolute;
-    bottom: 0;
-    left: 100%;
-    right: 0;
-    background-color: #008CBA;
-    overflow: hidden;
-    width: 0;
-    height: 100%;
-    transition: .5s ease;
+    
+    color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
 }
+
+ul {
+    list-style: none;
+}
+
