@@ -67,10 +67,10 @@ body {
     justify-content: center center;
 }
 
-.wrapper-h1 {
+.sec-h1 {
     font-size: 4em;
     color: rgb(255, 255, 255);
-    
+    justify-content: center;
 }
 
 /*about section*/
@@ -89,50 +89,33 @@ body {
 
 .dev-container {
     display: flex;
-    padding: 20px;
-    background-image: url(./images/bg.jpg);
+    position: relative;
+    background-image: url(../webProject/images/wrapper2.jpg);
+    background-position: top;
+    width: 100%;
+    padding: 2em;
 }
 
-.dev-container:hover .overlay-text {
+.dev-img:hover .text {
     width: 100%;
     left: 0;
-  }
-
-.gawie {
-
 }
-
-.tibert {
-
-}
-
 
 .dev-img {
     width: 300px;
     height: 300px;
     display: block;
+    justify-content: center;
 }
 
-.overlay-text {
+.text {
     position: absolute;
-  bottom: 0;
-  left: 100%;
-  right: 0;
-  background-color: #008CBA;
-  overflow: hidden;
-  width: 0;
-  height: 100%;
-  transition: .5s ease;
-}
-
-.dev-name {
-    font-size: 2em;
-}
-
-.dev-ul {
-    list-style: none;
-}
-
-.dev-li {
-
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
 }
